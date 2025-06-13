@@ -13,20 +13,20 @@ private:
     int minute;
 
 public:
-    void setDay(int& d);
-    int getDay() ;
+    void setDay(int d);
+    int getDay() const;
 
-    void setMonth(int& m);
-    int getMonth() ;
+    void setMonth(int m);
+    int getMonth() const;
 
-    void setYear(int& y);
-    int getYear() ;
+    void setYear(int y);
+    int getYear() const;
 
-    void setHour(int& h);
-    int getHour() ;
+    void setHour(int h);
+    int getHour() const;
 
-    void setMinute(int& m);
-    int getMinute() ;
+    void setMinute(int m);
+    int getMinute() const;
 
     friend  std::ostream& operator<<( std::ostream& out,  Date& date);
     friend  std::istream& operator>>( std::istream& in, Date& date);
@@ -39,11 +39,11 @@ private:
     std::string meal;
 
 public:
-    void setType(const std::string& t);
-    std::string getType() ;
+    void setType(std::string& t);
+    std::string getType() const;
 
-    void setMeal(const std::string& m);
-    std::string getMeal() ;
+    void setMeal(std::string& m);
+    std::string getMeal() const;
 
     friend  std::ostream& operator<<(std::ostream& out,  Food& food);
     friend  std::istream& operator>>( std::istream& in, Food& food);
