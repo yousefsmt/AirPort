@@ -1,30 +1,20 @@
-# Makefile that wraps CMake
+cmake_minimum_required(VERSION 3.10)
 
-# Build settings
-BUILD_DIR := build
-TARGET := your_project
+# Project name and language
+project(MyCppProject LANGUAGES CXX)
 
-# Default build rule
-all:
-	@mkdir -p $(BUILD_DIR)
-	cmake -S . -B $(BUILD_DIR)
-	cmake --build $(BUILD_DIR)
+# Specify the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Run the program
-run: all
-	./$(BUILD_DIR)/$(TARGET)
+# Include directory for header files
+include_directories(include)
 
-# Clean all build artifacts
-clean:
-	rm -rf $(BUILD_DIR)
+# Source files
+set(SOURCES
+    src/main.cpp
+    src/data.cpp
+)
 
-# Rebuild from scratch
-rebuild: clean all
-
-# Help
-help:
-	@echo "Usage:"
-	@echo "  make        - configure and build the project"
-	@echo "  make run    - build and run the executable"
-	@echo "  make clean  - delete all build files"
-	@echo "  make rebuild - clean and rebuild"
+# Create executable
+add_executable(${PROJECT_NAME} ${SOURCES})
