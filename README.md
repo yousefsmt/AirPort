@@ -78,5 +78,8 @@ The following features are considered bonus points and are planned for implement
 Ensure you have a C++ compiler installed (e.g., g++, clang).
 
 ```bash
-g++ -std=c++17 -o airport main.cpp
-./airport
+mkdir build
+cd build
+cmake ../
+make
+./MyCppProject

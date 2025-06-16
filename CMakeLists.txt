@@ -12,8 +12,17 @@ include_directories(include)
 
 # Source files
 set(SOURCES
-    src/main.cpp
-    src/data.cpp
+    src/main.cpp 
+    src/admin.cpp  
+    src/airport.cpp  
+    src/customer.cpp  
+    src/data.cpp  
+    src/domesticcities.cpp  
+    src/domesticflights.cpp  
+    src/food.cpp  
+    src/foreigncities.cpp  
+    src/foreignflights.cpp   
+    src/tax.cpp
 )
 
 # Create executable
