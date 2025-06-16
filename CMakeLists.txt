@@ -16,7 +16,7 @@ set(SOURCES
     src/admin.cpp  
     src/airport.cpp  
     src/customer.cpp  
-    src/data.cpp  
+    src/date.cpp  
     src/domesticcities.cpp  
     src/domesticflights.cpp  
     src/food.cpp  

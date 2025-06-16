@@ -1,6 +1,6 @@
 #include <iostream>
 #include "domesticflights.h"
-#include "data.h"
+#include "date.h"
 
 void DomesticFlights::setOriginCity(std::string& city){
     originCity = city;

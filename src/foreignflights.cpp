@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdint>
 #include "foreignflights.h"
-#include "data.h"
+#include "date.h"
 
 void ForeignFlights::setOriginCity(std::string& city){
     originCity = city;

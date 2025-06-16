@@ -1,5 +1,5 @@
 #include <iostream>
-#include "data.h"
+#include "date.h"
 
 void Date::setDay(int input_d){
     day = input_d;
