@@ -2,6 +2,7 @@
 #include "airport.h"
 
 void Airport::addFlight(std::string& fl){
+    
 
 }
 void Airport::removeFlight(std::string& fl){}

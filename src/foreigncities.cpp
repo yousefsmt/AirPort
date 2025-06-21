@@ -14,15 +14,11 @@ void ForeignCities::addCity(std::string& city){
 }
 
 std::string ForeignCities::getCities(){
-    std::string call_back {};
-    for (uint8_t i = 0; i < 10; i++)
-    {
-        if (!cities[i].empty()){
-            call_back += " ";
-            call_back += cities[i];
-            call_back += " ";
-        }          
-        else
-            return call_back;
+    std::string all_city {};
+    for (std::string k : cities){
+        all_city += " ";
+        all_city += k;
+        all_city += " ";
     }
+    return all_city;  
 }
